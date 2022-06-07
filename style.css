@@ -1,0 +1,432 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{overflow-x:hidden;}
+.container{max-width: 1200px;margin: auto;}
+.row{display: flex;}
+.img-responsive{max-width:100%;height:auto;}
+/******************
+header
+******************/
+header{width: 100%;min-height: 950px;background-image: linear-gradient(0deg, #eb402c 0%, #d80546 100%);position: relative;overflow: hidden;}
+header::before{content: " ";position: absolute;width: 120%;height: 225px;background-color:#ffffff;left: 0px;bottom: -100px;transform: rotate(-7deg);z-index: 0;}
+nav{display: flex;justify-content: space-between;color: #fff;padding: 40px 50px 0px 50px;}
+nav .logo{font: 900 49px/52px 'Lato', sans-serif;}
+.toggle div{
+display:none;
+width:30px;
+height:4px;
+background-color:#fff;
+margin:3px;
+border-radius:5px;
+}
+nav .menu ul{list-style: none;display: inline-flex;}
+nav .menu ul li{margin:0px 30px 0px 30px;}
+nav .menu ul li a{font:400 18px/28px 'Lato', sans-serif ;color: #fff;text-decoration: none;transition: 0.3s ease-in-out color;}
+nav .menu ul li a:hover{text-decoration: underline;}
+header .row{display: flex;justify-content: space-between; padding:110px 0px 0px 0px;}
+header .hero-text{width: 50%;padding-top:100px;}
+header .hero-text h1{font:900 72px/75px 'Lato', sans-serif;letter-spacing: 3px;color: #ffffff;margin:0px 0px 40px;}
+header .hero-text p{font:normal normal 24px/28px 'Lato', sans-serif;color: #ffffff;   }
+header .hero-text p strong{font:900 normal 24px/28px 'Lato', sans-serif;}
+a.btn, a.btn:link {margin:100px 0px 0px;font:700 18px/50px 'Lato', sans-serif;color:rgba(223,27,61);-webkit-text-shadow:0px 10px 15px rgba(223,27,61,0.3);-moz-text-shadow:0px 10px 15px rgba(223,27,61,0.3);text-shadow:0px 10px 15px rgba(223,27,61,0.3);width: 225px;height: 50px;border-radius: 25px;-webkit-box-shadow:0px 10px 20px rgba(54,54,54,0.15);-moz-box-shadow: 0px 10px 20px rgba(54,54,54,0.15);box-shadow: 0px 10px 20px rgba(54,54,54,0.15);background-color: #ffffff;float:left;text-align:center;text-decoration:none;}
+.hero-text a.btn:hover{font-size:20px;color:#fff;background-color:rgba(223,27,61);outline:2px solid #fff;}
+header .hero-image{text-align: right;width: 50%;position: relative;}
+header .hero-image img{margin:0px -50px 0px 0px;}
+/*************
+section-one
+**************/
+.section-one{border-bottom: 1px solid   #e0e0e0;}
+.section-one .img-part1, .section-one .text-part1{width:50%;}
+.section-one .img-part1 img{margin-left:0px 0px 0px -90px;}
+.section-one .text-part1{padding:190px 0px 0px;}
+.section-one .text-part1 h1{font:900 normal 60px/63px 'Lato', sans-serif ;color: #363636;margin-bottom:40px;}
+.section-one .text-part1 h1 span{color:rgba(223,27,61);}
+.section-one .text-part1 p{font:normal normal 18px/32px 'Lato', sans-serif;color: #808080;justify-content:space-between;}
+.section-one .img-part2, .section-one .text-part2{width:50%;}
+.section-one .text-part2{padding:180px 0px 0px 0px;}
+.section-one .text-part2 h1{font:900 normal 60px/63px 'Lato', sans-serif ;color: #363636;margin:0px 0px 40px;}
+.section-one .text-part2 h1 span{color:rgba(223,27,61);}
+.section-one .text-part2 p{font:normal normal 18px/32px 'Lato', sans-serif;color: #808080;justify-content:space-between;}
+.section-one .img-part2 img{margin-left:125px;}
+/******************
+section-2
+******************/
+.section-two{padding:95px 0px 230px;}
+.sec-heading{width: 100%;}
+.section-two h1{font: 900 normal 60px/64px 'Lato', sans-serif;color: #363636;text-align: center;}
+.section-two h1 span{color:rgba(223,27,61); }
+.sec-column{justify-content: space-evenly;padding: 125px 0px 0px;}
+.review{max-width:370px;}
+.review .review-text{padding: 30px 25px;border: 1px solid #e0e0e0;background: #ffffff;margin:0px 0px 30px;position:relative;}
+.review .review-text::after{position: absolute;content: " ";width: 16px;height: 16px;background: #fff;border: 1px solid #e0e0e0;bottom: -9px;left: 25px;transform: rotate(45deg);border-top-width: 0px;border-left-width: 0px;}
+.review .review-text p{font:400 italic 18px/24px 'Lato', sans-serif;color: #808080;margin: 0px 0px 20px 0px;}
+.review .review-text h6{font:700 18px/28px 'Lato', sans-serif;color:rgba(223,27,61); }
+.review .review-img{display: flex;}
+.review .review-img img{width: 60px;height: 60px;border-radius: 40px;}
+.review .review-img div {padding: 0px 0px 0px 20px;}
+.review .review-img div h5{font:500  18px/32px 'Lato', sans-serif ;letter-spacing: 1px;color: #363636;}
+.review .review-img div p{font:400 15px/28px  'Ubuntu', sans-serif ;letter-spacing: 1px;color: #667386;margin-top: -8px;}
+.section-two .sec-column .review:nth-of-type(2){margin:-40px 0px 0px;}
+.section-two .sec-column .review:nth-of-type(2) .review-text{border:0px;margin:0px 0px 80px;box-shadow: 0px 30px 30px rgba(54,54,54,0.15);}
+/*****************
+Section 3
+***************/
+.section-3{width:100%;display:grid;height:518px;background-image: linear-gradient(0deg, #eb402c 0%, #d80546 100%);}
+.section-3 .sec3-column .sec3-column1{grid-area:column1;margin:70px 0px 0px 0px;text-align:right;}
+.section-3 .sec3-column .sec3-column1 .sec3-img1{margin:-90px 0px 0px 290px;}
+.section-3 .sec3-column .sec3-column2{grid-area:column2;margin:-215px 0px 0px 0px;text-align:right;}
+.section-3 .sec3-column .sec3-column2 .sec3-img2{margin:-100px 0px 0px 290px;}
+.section-3 .sec3-column .sec-3-image{grid-area:image1;position:relative;width: 428px;height: 735px;}
+.section-3 .sec3-column .sec-3-image:after{content:" ";position:absolute;width:0px;height:0px;background-color: #232323;opacity:0.6;top:0px;left:60px;}
+.section-3 .sec3-column .sec-3-image:hover:after{content:" ";position:absolute;width: 292px;height: 519px;background-color: #232323;opacity:0.6;top:0px;left:62px;animation:0.3s ease-in-out width height;}
+.section-3 .sec3-column .sec-3-image .center-img{position:absolute;width:428px;height:735px;top:-83px}
+.section-3 .sec3-column .sec-3-image .sec-3-image-img1{position:absolute;top:233px;left:50%;transform:translateX(-50%);z-index:1;}
+.section-3 .sec3-column .sec3-column3{grid-area:column3;margin:92px 0px 0px 70px;}
+.section-3 .sec3-column .sec3-column3 .sec3-img3{margin:0px 0px -70px -70px;}
+.section-3 .sec3-column .sec3-column4{grid-area:column4;margin:-195px 0px 0px 70px;text-align:left;}
+.section-3 .sec3-column .sec3-column4 .sec3-img4{margin:0px 0px -70px -70px;}
+.section-3 .sec3-column{display:grid;grid-template-areas:'column1 image1 column3'    'column2 image1 column4' ;}
+.section-3 .sec3-text h3{width: 270px;height: 42px;font:900 normal 24px/34px 'Lato', sans-serif ;letter-spacing: 1px;color: #ffffff;}
+.section-3 .sec3-text p{width: 272px;height: 78px;font:400 normal 16px/28px 'Lato', sans-serif;letter-spacing: 1px;color: #ffffff;}
+.section-3 .sec3-column .sec3-img1{position:relative;margin:-100px 0px 0px 290px;}
+/********************
+Section-4
+*******************/
+.section-4{position: relative;padding:225px 0px 145px;border-bottom:1px solid #e0e0e0;}
+.section-4 .sec4-column{justify-content:center;}
+.section-4 .sec4-heading{position:relative;text-align:center;}
+.section-4 .sec4-heading h1{font:900 normal 60px/64px 'Lato', sans-serif ;color: #363636;}
+.section-4 .sec4-heading h1 span{color: rgba(223,27,61);}
+.section-4 .sec4-heading p{font:400 normal 18px/32px 'Lato', sans-serif;color: #808080;}
+.section-4 .sec4-heading p span{line-height:70px;}
+.section-4 .email{margin:69px 0px 0px;}
+.section-4 .sec4-heading .email input{width: 571px;height: 50px;border-radius: 25px;background-color: #f8f8f8;text-align:left;padding:20px;color: #808080;font: 400 normal 18px/32px 'Lato', sans-serif;position:relative;border:none;}
+.section-4 .sec4-heading .email input:focus{border:none;outline:none;}
+.section-4 .sec4-heading .button{width: 180px;height: 50px;border:none;border-radius: 25px;box-shadow:0px 10px 15px rgba(223,27,61,0.3);background-image: linear-gradient(0deg, #eb402c 0%, #d80546 100%);position:absolute;font:700 18px/22px 'Lato', sans-serif;color: #ffffff;margin-left: -180px; text-decoration:none;  transition:0.3s ease-in-out;  padding-top:12px;}
+/*******************
+section-5
+*******************/
+.section-5 {position:relative;text-align:center;border-bottom:1px solid #e0e0e0; width:100%;}
+.section-5 .sec5-image1{margin:102px 0px 0px 0px;}
+.section-5 h1{font:900 normal 60px/64px 'Lato', sans-serif ;color: #363636;}
+.section-5 h1 span{color: rgba(223,27,61);}
+.section-5 p{font:400 normal 18px/32px 'Lato', sans-serif;color: #808080;margin: 40px 0px 0px 0px;}
+.section-5 .sec5-image2{margin:60px 0px 100px 0px;}
+/****************
+Footer
+*****************/
+footer .row{display:flex; justify-content:space-between;}
+footer .menu ul{font:400 18px/28px 'Lato', sans-serif;list-style:none;margin:45px 0px 40px 50px;}
+footer .menu ul li{margin:0px 26px 0px 26px; display:inline;}
+footer .menu ul li a{text-decoration:none;color: #363636;}
+footer .menu ul li a:hover{text-decoration:underline;}
+footer .row .dropmenu{position:relative;width: 200px;height:50px;border-radius:25px; background-color:#f8f8f8; margin: 35px 50px 0px 0px; padding-top:10px;}
+footer .row .dropmenu::after{content:""; position:absolute; border:1px solid black; bottom:16px;width:12px; height:12px;border-top-width:0px;border-left-width:0px; transform: rotate(-135deg);right:16px;}
+footer .row .dropmenu a{margin:0px 0px 0px 30px;font:400 18px/28px 'Lato', sans-serif ;color: #363636;text-decoration:none;}
+footer .dropmenu .dropcontent{display:none; position:absolute;z-index:1;bottom:50px;}
+footer .dropmenu .dropcontent a{display:block; width:200px;height:50px;border-radius:15px;padding:10px 0px 0px 30px;margin-left:0px;}
+footer .dropmenu:hover .dropcontent{display:block;}
+footer .dropmenu .dropcontent a:hover{background-color:#f8f8f8;}
+
+
+@media only screen and (max-width:991px){
+.container{max-width:738px;}
+header{min-height:100vh;}
+header .hero-text {padding-top: 50px;}
+header .hero-text h1 {font: 900 65px/68px 'Lato', sans-serif;margin: 0px 0px 16px;}
+a.btn, a.btn:link {margin: 50px 0px 0px;}
+.section-one .img-part1{margin-top:auto;}
+.section-one .img-part1 img{margin:0px;}
+.section-one .text-part1{margin:0px 0px 20px 0px;padding:0px;}
+.section-one .text-part1 h1 {font: 900 normal 40px/63px 'Lato', sans-serif; margin-bottom:10px;}
+.section-one .img-part2{margin-top:auto;}
+.section-one .img-part2 img{margin:0px;}
+.section-one .text-part2{margin:0px 0px 40px 0px; padding:0px;}
+.section-one .text-part2 h1 {font: 900 normal 40px/63px 'Lato', sans-serif; margin-bottom:10px;}
+.section-two{padding: 80px 0px 100px;}
+.review{max-width:190px;}
+.section-3{height:auto;}
+.section-3 .sec3-column{grid-template-areas:'column1 column3' 'image1 image1' 'column2 column4';}
+.section-3 .sec3-column .sec3-column1{display: flex; flex-direction: row-reverse; text-align:left; padding: 0px 40px 0px 0px;}
+.section-3 .sec3-column .sec3-column1 .sec3-img1{margin: 0px 10px 0px 10px;}
+.section-3 .sec3-column .sec3-column2 .sec3-img2{margin: 0px 20px 0px 10px;}
+.section-3 .sec3-column .sec-3-image{left:20%; margin:50px 0px 200px 0px;}
+.section-3 .sec3-column .sec-3-image .center-img{ top:0px;}
+.section-3 .sec3-column .sec-3-image .sec-3-image-img1{left: 50%;top:350px;}
+.section-3 .sec3-column .sec-3-image:hover:after{top:85px;left:62px;}
+.section-3 .sec3-column .sec3-column2{padding: 20px 30px 50px 0px;display: flex;flex-direction: row-reverse;text-align:left;}
+.section-3 .sec3-column .sec3-column2 .sec3-img2{margin: 0px 20px 0px 10px;}
+.section-3 .sec3-column .sec3-column3{padding: 0px 0px 20px 0px;}
+.section-3 .sec3-column .sec3-column4{padding: 30px 0px 0px 10px;}
+.section-4{padding:90px 0px 100px;}
+.section-4 .sec4-heading h1{margin:0px 0px 10px;font: 900 normal 55px/64px 'Lato', sans-serif;}
+.section-5 .sec5-image1{margin: 50px 0px 0px 0px;}
+.section-5 h1{font: 900 normal 55px/64px 'Lato', sans-serif;}
+.section-5 p{margin: 40px 30px 0px;}
+.section-5 .sec5-image2{margin: 50px 0px 50px 0px;}
+footer .menu ul{font: 400 16px/28px'Lato', sans-serif; margin: 45px 0px 40px 0px;}
+footer .menu ul li{margin: 0px 20px 0px 20px;}
+}
+@media only screen and (max-width:767px){
+.container{max-width:100%;padding:0px 16px;}
+nav{padding: 40px 50px 0px 30px;}	
+.toggle{margin: 15px -30px 0px 0px;}
+.toggle div{display:flex;}
+nav .menu ul{text-align:left;display:none;position: absolute;padding:10px;background-color:#fff;border-radius:5px;right:20px;}
+nav .menu ul li a{color: #c36d6d;}
+header .row {padding:40px 0px 0px 0px;flex-direction: column;}
+header .hero-text{width:100%;padding:20px 0px 0px 0px;}
+header .hero-image {text-align: center;width:100%;padding:40px 0px 0px 0px;}
+header .hero-image img{margin:auto;}
+header .hero-text h1 {font: 900 40px/44px 'Lato', sans-serif; margin: 0px 0px 15px;}
+a.btn, a.btn:link {margin: 16px 0px 0px;width: 100%;}
+.section-one .row{flex-direction:column;}
+.section-one .row:nth-of-type(2){flex-direction:column-reverse;}
+.section-one .img-part1, .section-one .text-part1, .section-one .img-part2, .section-one .text-part2 {width: 100%;}
+.section-one .text-part1 p, .section-one .text-part2 p {text-align:justify;}
+.section-two {padding:30px 0px;}		
+.section-two h1 {font: 900 normal 40px/44px 'Lato', sans-serif;}
+.sec-column {flex-direction:column;padding: 25px 0px;}
+.review {max-width: 100%;padding-bottom:50px;}
+.section-3 .sec3-column {grid-template-areas:'column1' 'column3' 'image1' 'column2' 'column4';}
+.section-3 .sec3-text h3{width:100%;height:auto;}
+.section-3 .sec3-text p{width:100%;height:auto;}
+.section-3 .sec3-column .sec3-column1{width:100%;justify-content:center;margin:30px 0px;height:auto;}
+.section-3 .sec3-column .sec3-column2{width:100%;justify-content:center;height:auto;padding:0px 0px 50px;margin:0px;}
+.section-3 .sec3-column .sec3-column3 {width:auto;justify-content:center;margin: 30px 0px 0px 70px;height:auto;}
+.section-3 .sec3-column .sec3-column4{width: auto;justify-content: center;margin: 20px 0px 0px 70px;height: auto;padding: 0px 0px 30px 5px;}
+.section-3 .sec3-column .sec-3-image {width:100%;height:auto;left:auto;margin:auto;}
+.section-3 .sec3-column .sec-3-image .center-img {position:relative;width:288px;height:494px;margin:auto;display:block;}
+.section-3 .sec3-column .sec-3-image .sec-3-image-img1 {left: 50%;top:45%;transform:translateXY(-50%,-50%);}
+.section-3 .sec3-column .sec-3-image:hover:after {height:350px;width:200px;top: 50%;left: 50%;transform: translate(-52%,-55%);}
+.section-4 {padding: 30px 0px;}
+.section-4 .sec4-heading h1 {font: 900 normal 40px/44px 'Lato', sans-serif;}
+.section-4 .sec4-heading p {text-align:justify;}
+.section-4 .sec4-heading .email input{width:100%;margin-bottom:15px;}
+.section-4 .sec4-heading .button {width: 100%;position: relative;margin:auto;display:block;}
+.section-5 h1{font: 900 normal 40px/44px 'Lato', sans-serif;}
+footer .row {flex-direction:column;padding:0px 30px; align-items:center;}
+footer .row .dropmenu {width: 100%;margin:0px 0px 20px;padding-top:10px;}
+footer .menu ul li {margin: 0px 3px 0px 3px;font: 400 14px/28px'Lato', sans-serif;}
+/******************
+Webfonts Lato
+******************/
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-BlackItalic.woff2') format('woff2'),
+        url('./fonts/Lato-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Bold.woff2') format('woff2'),
+        url('./fonts/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Black.woff2') format('woff2'),
+        url('./fonts/Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-BoldItalic.woff2') format('woff2'),
+        url('./fonts/Lato-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('./fonts/Lato-Hairline.woff2') format('woff2'),
+        url('./fonts/Lato-Hairline.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('./fonts/Lato-HairlineItalic.woff2') format('woff2'),
+        url('./fonts/Lato-HairlineItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Heavy.woff2') format('woff2'),
+        url('./fonts/Lato-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-HeavyItalic.woff2') format('woff2'),
+        url('./fonts/Lato-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Italic.woff2') format('woff2'),
+        url('./fonts/Lato-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Light.woff2') format('woff2'),
+        url('./fonts/Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-LightItalic.woff2') format('woff2'),
+        url('./fonts/Lato-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Medium.woff2') format('woff2'),
+        url('./fonts/Lato-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-MediumItalic.woff2') format('woff2'),
+        url('./fonts/Lato-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Regular.woff2') format('woff2'),
+        url('./fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Semibold.woff2') format('woff2'),
+        url('./fonts/Lato-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-SemiboldItalic.woff2') format('woff2'),
+        url('./fonts/Lato-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Thin.woff2') format('woff2'),
+        url('./fonts/Lato-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-ThinItalic.woff2') format('woff2'),
+        url('./fonts/Lato-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+/***********
+Web Font Ubuntu
+******************/
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./fonts/Ubuntu-BoldItalic.woff2') format('woff2'),
+        url('./fonts/Ubuntu-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./fonts/Ubuntu-Bold.woff2') format('woff2'),
+        url('./fonts/Ubuntu-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu Condensed';
+    src: url('./fonts/UbuntuCondensed-Regular.woff2') format('woff2'),
+        url('./fonts/UbuntuCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./fonts/Ubuntu-LightItalic.woff2') format('woff2'),
+        url('./fonts/Ubuntu-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./fonts/Ubuntu-Medium.woff2') format('woff2'),
+        url('./fonts/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./fonts/Ubuntu-Light.woff2') format('woff2'),
+        url('./fonts/Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./fonts/Ubuntu-MediumItalic.woff2') format('woff2'),
+        url('./fonts/Ubuntu-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./fonts/Ubuntu.woff2') format('woff2'),
+        url('./fonts/Ubuntu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./fonts/Ubuntu-Italic.woff2') format('woff2'),
+        url('./fonts/Ubuntu-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
